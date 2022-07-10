@@ -1,0 +1,9 @@
+header {
+	width: 101vw;
+	position: absolute;
+	align-self: start;
+	background-image: url(../../../../media/img/svg/bg/Wave.svg);
+	background-size: cover;
+	background-repeat: repeat-x;
+	animation: play calc(var(--animation-time) * calc(var(--BPM) / 3 * 2)) linear infinite reverse
+}

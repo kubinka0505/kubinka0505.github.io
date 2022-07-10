@@ -1,0 +1,31 @@
+td br {margin-bottom: 1em}
+
+td:last-child a {
+	height: auto;
+	display: inline-flex;
+	color: var(--link-color-2);
+	text-decoration: none
+}
+
+tr:nth-child(1) {background: var(--background-color-1)}
+tr:nth-child(odd) {background: #141414}
+
+table, tr, td, th {
+	width: 100%;
+	padding: 2em;
+	table-layout: fixed;
+	border-collapse: collapse;
+	overflow: hidden
+}
+
+table {
+	width: 75%;
+	background: var(--background-color-1);
+	text-align: center;
+	border-radius: 1.5em
+}
+
+table img {
+	width: 2em;
+	height: auto
+}

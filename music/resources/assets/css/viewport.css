@@ -1,0 +1,24 @@
+@media only screen and (max-width: 800px) {
+	:root {--scale: 0.75 !important}
+
+	.container {width: 87.5% !important}
+	.container code {font-size: 104.25% !important}
+	.container header nav {
+		flex-flow: column !important;
+		justify-content: center !important
+	}
+	.container header nav p:last-of-type {font-size: 87.5%}
+	.container section aside {display: none !important}
+
+	.main table {
+		width: 82.5% !important;
+		font-size: 1.5vh !important
+	}
+
+	header nav section {justify-content: center !important}
+	header nav section p {display: none !important}
+	header nav section figure {
+		width: 50% !important;
+		justify-content: center !important
+	}
+}

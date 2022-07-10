@@ -1,0 +1,14 @@
+figure {
+	width: 37.5vh;
+	position: var(--panels-position)
+}
+
+figure:hover {
+	opacity: .75;
+	cursor: grab
+}
+
+figure:active {
+	opacity: .5;
+	cursor: grabbing
+}

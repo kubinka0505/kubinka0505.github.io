@@ -1,0 +1,40 @@
+#info {
+	flex-flow: row !important;
+	justify-content: start
+}
+
+#info content {
+	width: 42.5%;
+	height: 100%;
+	flex-flow: column
+}
+
+#info .figure {
+    justify-content: end;
+	position: absolute;
+    align-items: end;
+	width: 12.5vw;
+	height: 12.5vw;
+	border: .375em solid black;
+    border-radius: 50%;
+	outline: .325em ridge rgba(219, 0, 0, .75);
+	animation:
+		avatar_pulse calc(60s / var(--BPM)) infinite ease-out,
+		background_color 25s linear infinite alternate;
+	box-shadow: 0 0 3.25vw red;
+    overflow: clip
+}
+
+#info .figure img {
+	max-height: 92.5%;
+}
+
+#info h1 {
+	font-size: 2.5em;
+	font-weight: 400
+}
+
+#info em {
+	color: red;
+	display: none
+}

@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	transition: .0625s linear;
+	text-align: center
+}
+
+#bottom section {
+	font-weight: 400;
+	width: inherit
+}
+
+#bottom section,
+#bottom section article div {
+	overflow: hidden
+}
+
+#bottom section {
+	height: 57.5%;
+	animation: open calc(var(--animation-time) * 1.75) cubic-bezier(1, 0, 0, 1)
+}
+
+#bottom section article {
+	width: 62.5%;
+	height: 100%;
+	overflow: auto;
+	font-size: 1.75vh;
+	border: 1em outset var(--border-color);
+	word-wrap: break-word;
+	scrollbar-color: var(--background-color-5) #222;
+	scroll-snap-type: x mandatory;
+	box-sizing: border-box;
+	scroll-behavior: auto
+}
+
+#bottom section article div:not([class]) {
+	flex-flow: column;
+	height: inherit;
+	scroll-snap-align: start;
+	padding: 0
+}
+
+#bottom section article div:nth-child(even):not([class]) {background: #000}
+#bottom section article div:nth-child(odd):not([class]) {background: var(--background-color-2)}
+
+#bottom h1 *,
+#bottom h2 *,
+#bottom h3 * {
+	text-align: center;
+	font-weight: 700
+}

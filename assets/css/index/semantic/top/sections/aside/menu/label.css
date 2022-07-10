@@ -1,0 +1,17 @@
+:root {
+	--label-button-color: var(--background-color-5)
+}
+
+#top label {
+	width: 1.75em;
+	height: 1.75em;
+	border-radius: .125em;
+	background: var(--label-button-color);
+	cursor: pointer;
+	transition: ease-out calc(var(--animation-time) / 10)
+}
+
+#top label:hover {background: var(--background-color-4)}
+#top label:active {background: maroon}
+
+#top input[type="checkbox"] {display: none}

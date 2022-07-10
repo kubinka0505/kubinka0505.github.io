@@ -1,0 +1,45 @@
+@import "fonts.css";
+
+:root {
+	--BPM: 135;
+	--text-color: #FFF;
+	--link-color: #D3D3D3;
+	--link-color-2: #00B0F4;
+	--border-color: var(--background-color-5);
+	--background-color-1: #101010;
+	--background-color-2: #161616;
+	--background-color-3: #282828;
+	--background-color-4: #323232;
+	--background-color-5: #484848;
+	--background-color-6: #525252;
+	--background-error: #200000;
+	--scroll-behavior: x mandatory;
+	--panels-position: fixed;
+	--important-opacity: 0.5;
+	--navigation-height: 12.5%;
+	--animation-time: 0.325s
+}
+
+* {
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: Jost
+}
+
+img[src*=".svg"],
+img[src*=".png"] {
+	pointer-events: none
+}
+
+code {font-family: PxPlus IBM VGA8}
+
+emoji {
+	font-family: Twemoji;
+	font-weight: 400
+}

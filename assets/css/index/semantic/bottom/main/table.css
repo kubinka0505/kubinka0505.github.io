@@ -1,0 +1,35 @@
+:root {
+	--table-height: 100%
+}
+
+.th {height: calc(var(--table-height))}
+.tr {min-height: calc(var(--table-height) / 8)}
+.td a {display: inline-flex}
+.th, .tr {padding: 1em}
+.td, .tr {flex-direction: column}
+.table * {transition: calc(var(--animation-time) / 8) linear}
+.table br {margin: .1875em 0}
+.table a:hover {transform: scale(calc(1 + 1 / 8))}
+.td, .th, .th img, .tr {width: 100%}
+.td, th, .tr .th *, .th img {height: var(--table-height)}
+
+.td a img {
+	height: inherit;
+	align-self: center
+}
+
+.table {
+	min-width: 75%;
+	max-width: 50vw;
+	height: calc(var(--table-height) / 2);
+	margin-top: 10vh;
+	/*background: #101010;
+	padding: .5em;
+	border: .25em solid var(--background-color-6);
+	border-radius: 1em*/
+}
+
+.th a {
+	max-width: 75%;
+	height: 75%;
+}

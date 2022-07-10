@@ -1,0 +1,7 @@
+#bottom {
+	justify-content: center;
+	overflow-x: hidden;
+	animation: background_color 25s linear infinite alternate
+}
+
+header, footer {height: var(--navigation-height)}

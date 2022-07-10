@@ -1,0 +1,16 @@
+body,
+header nav,
+body > header,
+body > footer,
+.main > div,
+.main > div > article,
+.main > div > article h1,
+.container section article footer nav,
+.container section article footer nav a,
+.container section article footer p,
+.container section aside,
+.container section {
+	display: flex;
+	align-items: center;
+	justify-content: center
+}

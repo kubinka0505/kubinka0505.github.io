@@ -1,0 +1,23 @@
+.waveform, .background {
+	width: 100%;
+	opacity: calc(var(--important-opacity) * .5);
+	background-position: center;
+	align-self: center;
+	position: var(--panels-position);
+	pointer-events: none;
+}
+
+.waveform {
+	height: 25%;
+	filter: blur(8.25px);
+	background-image: url(../../../../media/img/svg/bg/Waveform.svg);
+	background-size: 100% 100%;
+	background-repeat: repeat-x;
+	animation: play calc(var(--animation-time) * 240) linear infinite;
+}
+
+.background {
+	height: 100%;
+	filter: blur(12.5px);
+	background-image: url(../../../../../assets/media/img/png/Background.jpg);
+}

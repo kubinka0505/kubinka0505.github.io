@@ -1,0 +1,47 @@
+:root {
+	--polygon-height: 50%
+}
+
+aside article {
+	width: 25em;
+	padding: 1.25em;
+	background: var(--background-color-3);
+	position: var(--panels-position);
+	border-radius: .325em;
+	flex-flow: column
+}
+
+aside article h1,
+aside article em,
+aside article menu {
+	width: 100%;
+}
+
+aside article h1 a {
+	width: 100%;
+	height: 1.75em;
+	color: #FFF;
+	font-weight: normal;
+	font-size: .825em;
+	font-family: Circular;
+	text-transform: uppercase;
+	animation: text_shadow calc(var(--animation-time) * 25) linear infinite;
+	transition: var(--animation-time) ease-in-out;
+}
+
+aside article em p {padding: 0 0 .875em}
+
+aside article em {
+	height: 3em;
+	font-size: 1.125em;
+	text-transform: lowercase
+}
+
+aside article h1 {
+	font-size: 3em;
+	font-weight: 200;
+	margin: 0
+}
+
+aside mark {animation-direction: reverse}
+aside article p {padding-bottom: .5em}

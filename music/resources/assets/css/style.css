@@ -1,0 +1,58 @@
+:root {
+	--height: 75vh;
+	--padding: 10vh;
+	--scale: 2
+}
+
+* {
+	color: var(--text-color);
+	text-align: center;
+	margin: 0
+}
+
+body, html {height: 100%}
+
+body {
+	width: 100%;
+	background: var(--background-color-3);
+	display: flex;
+	flex-flow: column;
+	overflow: hidden
+}
+
+mark {
+	font-size: 8.75vh;
+	background: none
+}
+
+abbr {
+	font-family: PxPlus IBM VGA8;
+	color: lime
+}
+
+.a {color: var(--link-color) !important}
+.main a, abbr {text-decoration: none}
+
+a:hover {text-decoration: underline}
+
+a > img {
+	/*! width: auto; */
+	height: 2.25em;
+	scale: 1;
+	transition: 0.125s ease-in-out
+}
+
+.main a {display: inline-flex}
+.main a:hover > img {transform: scale(1.25)}
+.main > div {min-height: 100%}
+
+strong, a u {color: red}
+
+h1 {font-size: 2vh}
+h1, th {font-weight: 400}
+
+br {
+	display: block;
+	margin: 2em
+}
+p {display: initial}

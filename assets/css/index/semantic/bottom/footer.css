@@ -1,0 +1,15 @@
+footer {
+	width: 100%;
+	align-self: end;
+	position: absolute;
+	background: #000;
+	text-align: center;
+	font-size: 1.1875em
+}
+
+footer a {
+	color: inherit;
+	animation: bounce calc(60s / var(--BPM)) infinite ease-out
+}
+
+footer p {color: gray}

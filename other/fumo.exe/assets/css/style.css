@@ -1,0 +1,20 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	background: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden
+}
+
+a {
+	color: var(--link-color);
+	font-size: 7.5vw;
+	text-align: center;
+	text-decoration: none;
+	position: fixed;
+	animation: text_shadow calc(var(--animation-time) * 2) linear infinite
+}
+
+a * {margin: 0}

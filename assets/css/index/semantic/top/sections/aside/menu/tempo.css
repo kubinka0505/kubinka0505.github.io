@@ -1,0 +1,33 @@
+.tempo {
+	font-size: 1em;
+	font-weight: 300;
+	top: 0;
+	position: sticky;
+	float: right
+}
+
+#input {
+	width: 75%;
+	height: .75em;
+	display: inline-block;
+	background: gray;
+	border-radius: 1em;
+	cursor: pointer
+}
+
+#input::-moz-range-thumb,
+#input::-webkit-slider-thumb,
+#input::-webkit-scrollbar-thumb {
+	width: 1.5em;
+	height: 1.5em;
+	background: url(../../../../../../../media/img/svg/icons/Slider.svg);
+	background-size: cover;
+	border: .125em solid #FFF;
+	border-radius: 100%;
+	cursor: grab
+}
+
+#input::-moz-range-thumb:active {cursor: grabbing}
+
+.tempometer {width: 3.75em}
+.BPM {margin: 0 .25em 0}
