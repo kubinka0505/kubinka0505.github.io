@@ -1,0 +1,32 @@
+@media only screen and (max-width: 800px) {
+	.options {
+		width: 100% !important;
+	}
+
+	.background {
+		background-size: cover;
+	}
+
+	.container {
+		padding: 20px;
+		width: 100% !important;
+		height: 100%;
+		flex-flow: column;
+		overflow: scroll;
+		scrollbar-width: none;
+	}
+
+	.subcontainer {
+		flex-flow: column;
+		align-items: center;
+	}
+
+	.option:last-child {
+		margin-bottom: calc(2 * var(--option-margin)) !important;
+	}
+
+	.box {
+		width: 100% !important;
+		justify-content: center !important
+	}
+}

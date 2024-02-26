@@ -1,0 +1,214 @@
+/* Common rues */
+
+.container .config,
+.container input:not([type="checkbox"]) {
+	margin-bottom: 15px
+}
+
+.container,
+.container input:not([type="checkbox"]),
+.container button {
+	border-radius: var(--border-radius)
+}
+
+.container .outDiv {
+	border-top-left-radius:  calc(var(--border-radius) / 2);
+	border-top-right-radius: calc(var(--border-radius) / 2)
+}
+
+.container .config .btn,
+.container .config .cbxs input[type="checkbox"] {
+	transition: filter calc(var(--animation-time) / 8) ease-out
+}
+
+.container .config .btn:hover,
+.container .config .cbxs input[type="checkbox"]:not(:disabled):hover {
+	filter: brightness(0.5)
+}
+
+/* Main */
+
+body {
+	width: 100%;
+	height: 100%
+}
+
+h2 {
+	margin-bottom: 0.5em;
+	margin-top: 0;
+	text-align: initial
+}
+
+main {
+	padding: 0 15%;
+	min-height: calc(100% - var(--navigation-height));
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center
+}
+
+/* Container */
+
+.container * {
+	font-family: inherit
+}
+
+.container {
+	width: 400px;
+	display: flex;
+	flex-flow: column;
+	padding: 32px;
+	background: var(--background-color-1);
+	border: 3px solid var(--background-color-5)
+}
+
+.container > section {
+	display: initial;
+	margin-bottom: 1em
+}
+
+.container section aside {
+	display: block
+}
+
+.container > section > aside {
+	text-align: left;
+	border: 0 solid var(--background-color-5);
+	border-width: 0 0 0 3px;
+	font-style: italic;
+	padding: 0 0 0 0.5em
+}
+
+/* Inputs */
+
+.container .inputs input {
+	width: 100%;
+	padding: 10px;
+	border: 2px solid var(--background-color-5);
+	background: var(--background-color-2);
+	color: var(--text-color);
+	text-align: left;
+	float: left;
+	box-sizing: border-box
+}
+
+.container .inputs input:focus {
+	outline: none;
+	border-color: var(--color-red)
+}
+
+/* Config */
+
+.container .config {
+	display: flex;
+	flex-flow: row-reverse;
+	justify-content: space-between;
+}
+
+.container .config .btn {
+	height: auto
+}
+
+.container .config .btn button {
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+	background-color: var(--color-red);
+	color: #FFF;
+	border: none;
+	cursor: pointer
+}
+
+/* Checkboxes */
+
+.container .config .cbxs {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	height: 75px
+}
+
+.container .config .cbxs input {
+	float: left;
+	margin-left: 0;
+	transform: scale(2)
+}
+
+.container .config .cbxs span:has(label) {
+	width: fit-content;
+	display: flex;
+	flex-flow: row-reverse
+}
+
+.container .config .cbxs:not(span) > br {
+	margin: 0.5em 0
+}
+
+.container .config .cbxs label {
+	margin-left: 3px;
+	text-align: left
+}
+
+.container .config .cbxs input[type="checkbox"] {
+	transition: filter calc(var(--animation-time) / 4) ease-out;
+	margin: 8px 20px 0 0px;
+	appearance: none
+}
+
+.container .config .cbxs input[type="checkbox"]:checked {
+	background: lime
+}
+
+.container .config .cbxs input[type="checkbox"]:disabled {
+	opacity: 0.5;
+	cursor: not-allowed !important;
+	filter: saturate(0.75)
+}
+
+.container .config .cbxs input[type="checkbox"]:after {
+	display: inline-block;
+	content: "✖";
+	position: absolute;
+	top: 0;
+	visibility: visible;
+	width: 8px;
+	height: 8px;
+	text-align: center;
+	border-radius: 2px;
+	line-height: 8px;
+	font-size: 6px;
+	background: var(--color-red);
+	color: #FFF;
+	cursor: pointer
+}
+
+
+.container .config .cbxs input[type="checkbox"]:checked:after {
+	content: "✔";
+	background: var(--color-green)
+}
+
+/* Output div */
+
+.container .outDiv {
+	text-align: left;
+	font-family: PxPlus IBM VGA8;
+	font-size: inherit;
+	border: 3px outset var(--background-color-6);
+	transition: background 0.5s
+}
+
+.container .outDiv > div {
+	overflow-x: scroll;
+	scrollbar-width: thin;
+	scrollbar-color: var(--background-color-6) var(--background-color-3)
+}
+
+.container .outDiv .output {
+	background: initial;
+	overflow: auto;
+	width: max-content;
+	display: flex;
+	padding: 1em
+}

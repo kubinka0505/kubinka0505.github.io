@@ -1,0 +1,11 @@
+header {
+	width: 101%;
+	height: 100%;
+	margin-top: -1px;
+	overflow-y: visible;
+	align-self: start;
+	background-image: url(../../../../media/img/svg/bg/Wave.svg);
+	background-size: cover;
+	background-repeat: repeat-x;
+	animation: play calc(var(--animation-time) * 120) linear infinite reverse;
+}

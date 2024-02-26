@@ -1,0 +1,15 @@
+@media only screen and (max-width: 800px) {
+	.container {
+		width: 100% !important;
+	}
+	.container section aside {
+		display: inherit !important
+	}
+	.container .config {
+		min-height: 150px !important;
+		flex-flow: column-reverse !important;
+	}
+	.container .config .cbxs {
+		height: 100px !important
+	}
+}
