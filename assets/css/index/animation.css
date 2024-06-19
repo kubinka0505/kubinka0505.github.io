@@ -1,0 +1,33 @@
+@keyframes background_color {
+	0% {background: var(--background-color-3)}
+	to {background: var(--background-color-4)}
+}
+
+@keyframes bounce {
+	0%, to {top: 0}
+	87.5% {top: 5px}
+}
+
+@keyframes open {
+	0% {height: 0%}
+}
+
+@keyframes play_a {
+	to {background-position: 100vw}
+}
+
+@keyframes play_b {
+	to {background-position: 100%}
+}
+
+@keyframes text_shadow {
+	0%, to {text-shadow: 0 0 12.5px red}
+	25% {text-shadow: 0 0 12.5px #FF0}
+	50% {text-shadow: 0 0 12.5px #0FF}
+	75% {text-shadow: 0 0 12.5px lime}
+}
+
+@keyframes avatar_pulse {
+	0%, to {border-width: 20px}
+	87.5% {border-width: 8px}
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>kubinka0505 | Geometry Dash Faces Maker 🎛️</title>
+		<meta charset="UTF-8">
+		<base target="_blank">
+
+		<!-- Setup -->
+		<link rel="icon" href="../../assets/media/img/svg/icons/Wrench_01.svg" type="image/svg+xml">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="../../assets/css/global.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/viewport.css">
+	</head>
+	<body>
+		<div class="background"></div>
+		<div class="container">
+			<div class="header">
+				<h1 class="headerText">Geometry Dash Faces Creator</h1>
+			</div>
+			<div class="subcontainer">
+				<div class="options">
+					<div class="option">
+						<label for="core">Core</label>
+						<select id="core" onchange="change(this.value, 'core');" class="core">
+							<option value="core_unrated">Unrated</option>
+							<option value="core_auto">Auto</option>
+							<option value="core_easy">Easy</option>
+							<option value="core_casual">Casual</option>
+							<option selected value="core_normal">Normal</option>
+							<option value="core_hard">Hard</option>
+							<option value="core_harder">Harder</option>
+							<option value="core_tough">Tough</option>
+							<option value="core_insane">Insane</option>
+							<option value="core_extreme">Extreme</option>
+							<option value="core_hrm">Hrm</option>
+							<option value="core_pog">Pog</option>
+							<option value="core_none">None</option>
+						</select>
+					</div>
+					<div class="option">
+						<label for="eyebrows">Eyebrows</label>
+						<select id="eyebrows" onchange="change(this.value, 'eyebrows');" class="eyebrows">
+							<option value="eyebrows_easy">Easy</option>
+							<option value="eyebrows_casual">Casual</option>
+							<option selected value="eyebrows_normal">Normal</option>
+							<option value="eyebrows_hard">Hard</option>
+							<option value="eyebrows_harder">Harder</option>
+							<option value="eyebrows_tough">Tough</option>
+							<option value="eyebrows_insane">Insane</option>
+							<option value="eyebrows_extreme">Extreme</option>
+							<option value="eyebrows_hrm">Hrm</option>
+							<option value="eyebrows_pog">Pog</option>
+							<option value="eyebrows_none">None</option>
+						</select>
+					</div>
+					<div class="option">
+						<label for="eyes">Eyes</label>
+						<select id="eyes" onchange="change(this.value, 'eyes');" class="eyes">
+							<option value="eyes_unrated">Unrated</option>
+							<option value="eyes_auto">Auto</option>
+							<option value="eyes_easy">Easy</option>
+							<option value="eyes_casual">Casual</option>
+							<option selected value="eyes_normal">Normal</option>
+							<option value="eyes_hard">Hard</option>
+							<option value="eyes_harder">Harder</option>
+							<option value="eyes_tough">Tough</option>
+							<option value="eyes_insane">Insane</option>
+							<option value="eyes_extreme">Extreme</option>
+							<option value="eyes_hrm">Hrm</option>
+							<option value="eyes_pog">Pog</option>
+							<option value="eyes_none">None</option>
+						</select>
+					</div>
+					<div class="option">
+						<label for="mouth">Mouth</label>
+						<select id="mouth" onchange="change(this.value, 'mouth');" class="mouth">
+							<option value="mouth_easy">Easy</option>
+							<option value="mouth_casual">Casual</option>
+							<option selected value="mouth_normal">Normal</option>
+							<option value="mouth_hard">Hard</option>
+							<option value="mouth_harder">Harder</option>
+							<option value="mouth_tough">Tough</option>
+							<option value="mouth_insane">Insane</option>
+							<option value="mouth_extreme">Extreme</option>
+							<option value="mouth_insanedemon">Hard Demon</option>
+							<option value="mouth_insanedemon">Insane Demon</option>
+							<option value="mouth_extremedemon">Extreme Demon</option>
+							<option value="mouth_supremedemon">Supreme Demon</option>
+							<option value="mouth_hrm">Hrm</option>
+							<option value="mouth_pog">Pog</option>
+							<option value="mouth_none">None</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="display">
+						<img class="core_display" src="assets/media/img/svg/faces/normal/core.svg">
+					</div>
+					<div class="display">
+						<img class="eyebrows_display" src="assets/media/img/svg/faces/normal/eyebrows.svg">
+					</div>
+					<div class="display">
+						<img class="eyes_display" src="assets/media/img/svg/faces/normal/eyes.svg">
+					</div>
+					<div class="display">
+						<img class="mouth_display" src="assets/media/img/svg/faces/normal/mouth.svg">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function change(value, type) {
+				value = value.split("_");
+				if (value[1] !== "none") {
+					value = value.reverse().join("/");
+					value = `assets/media/img/svg/faces/${value}`;
+				} else {
+					value = "assets/media/img/svg/faces/none"
+				};
+				value = value + ".svg";
+				document.querySelector(`.${type}_display`).src = value;
+				checkSelectedValues();
+			}
+			
+			function checkSelectedValues() {
+				const selects = document.querySelectorAll('select');
+				let snd = "";
+			
+				const sels = Array.from(selects, select => select.value.split("_")[1]);
+			
+				if (sels.every(value => value === "normal")) {snd = "fith"}
+				if (sels.every(value => value === "easy")) {snd = "woth"}
+				if (sels.every(value => value === "hard")) {snd = "rotg"}
+			  
+				if (snd) {
+					const audio = new Audio(`assets/media/sound/${snd}.mp3`);
+					audio.volume = 0.325;
+					audio.play();
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+@media only screen and (max-width: 800px) {
+	:root {--scale: 0.75 !important}
+
+	.container {
+		width: 87.5% !important
+	}
+	.container code {
+		font-size: 104.25% !important
+	}
+	.container header nav {
+		flex-flow: column !important;
+		justify-content: center !important
+	}
+	.container header nav p:last-of-type {
+		font-size: 87.5%
+	}
+	.container section aside {
+		display: none !important
+	}
+
+	.main div > article {
+		padding: calc(var(--navigation-height) / 2) 0;
+	}
+	.main table {
+		width: 82.5% !important
+	}
+	.main br + br {
+		display: none
+	}
+
+	header nav section {
+		justify-content: center !important
+	}
+	header nav section p {
+		display: none !important
+	}
+	header nav section figure {
+		width: 190px !important;
+		justify-content: center !important
+	}
+}

@@ -1,0 +1,19 @@
+#top menu {
+	width: 100%;
+	height: 80px;
+	background: rgba(0, 0, 0, 0.75);
+	padding: 0;
+	border-radius: inherit;
+}
+
+#top menu div {
+	width: inherit;
+	height: inherit
+}
+
+#top menu div:nth-child(-n+2) {max-width: 18.75%}
+
+#top menu nav {
+	width: 87.5%;
+	height: 100%
+}

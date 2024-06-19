@@ -1,0 +1,39 @@
+.container {
+	width: 75%;
+	border-radius: 20px;
+	overflow: clip
+}
+
+.container header {
+	width: 100%;
+	height: 80px;
+	background: var(--background-color-2);
+	position: relative
+}
+
+.container header nav {
+	height: 100%;
+	justify-content: space-between;
+	padding: 0 8.25%;
+	position: relative
+}
+
+.container header nav code {
+	color: lime;
+	font-size: 102.5%
+}
+
+.container header nav p:first-of-type {
+	font-size: 18px;
+	display: inline-flex;
+}
+
+.container header nav p:last-of-type a {
+	color: var(--link-color)
+}
+
+.container footer {
+	display: flex;
+	flex-flow: column;
+	flex-grow: 1
+}
