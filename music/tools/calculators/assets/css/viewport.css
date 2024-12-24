@@ -1,0 +1,33 @@
+@media only screen and (max-width: 800px) {
+	.container {
+		width: 100% !important;
+		scrollbar-width: initial;
+		font-size: 87.5%;
+	}
+
+	.container section aside {
+		display: inherit !important;
+		line-height: 1.325em
+	}
+
+	.container .config {
+		flex-flow: column-reverse !important
+	}
+
+	.container .config .cbxs {
+		justify-content: space-between;
+		padding-bottom: 15px
+	}
+
+	/*-=-=-=-*/
+
+	.container .inputs > div {
+		flex-flow: column
+	}
+
+	.container .inputs > div > span {
+		width: initial;
+		min-width: revert;
+		padding-bottom: 7px
+	}
+}

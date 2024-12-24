@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="31.856mm" height="31.829mm" version="1.1" viewBox="0 0 31.856 31.829" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient19765" x1="57.1" x2="57.1" y1=".35" y2="113.85" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#ff0" offset="0"/>
+   <stop stop-color="#fc0" offset=".49412"/>
+   <stop stop-color="#f60" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient19771" x1="52.888" x2="90.512" y1="4.9" y2="97.1" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#ff0" offset="0"/>
+   <stop stop-color="#fc0" offset=".49412"/>
+   <stop stop-color="#f60" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g transform="translate(-33.374 -212.27)">
+  <g transform="matrix(.26458 0 0 .26458 34.168 213.06)">
+   <path d="m97.2 97.2q16.65-16.6 16.65-40.1t-16.65-40.15q-16.6-16.6-40.1-16.6t-40.15 16.6q-16.6 16.65-16.6 40.15t16.6 40.1q16.65 16.65 40.15 16.65t40.1-16.65z" fill="url(#linearGradient19765)"/>
+   <path d="m113.7 57.1q-1.5 20.55-16.5 35.5-16.6 16.65-40.1 16.65t-40.15-16.65q-14.95-14.95-16.4-35.5-0.1-1.15-0.15-2.3-0.05 1.15-0.05 2.3 0 23.5 16.6 40.1 16.65 16.65 40.15 16.65t40.1-16.65q16.65-16.6 16.65-40.1 0-1.15-0.05-2.3-0.05 1.15-0.1 2.3z" fill="#d40"/>
+   <path d="m113.7 57.1q0.05 1.1 0.1 2.25 0.05-1.1 0.05-2.25 0-23.5-16.65-40.15-16.6-16.6-40.1-16.6t-40.15 16.6q-16.6 16.65-16.6 40.15 0 1.15 0.05 2.25 0.05-1.15 0.15-2.25 1.4-20.6 17.15-35.9t39.25-15.35 39.4 15.3 17.35 35.95z" fill="#ff4"/>
+   <path d="m114.4 57.15q0 23.7-16.85 40.4-16.7 16.75-40.4 16.75-23.65 0-40.45-16.75-16.7-16.7-16.7-40.4 0-23.65 16.7-40.45 16.8-16.7 40.45-16.7 23.7 0 40.4 16.7 16.85 16.8 16.85 40.45z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+   <path d="m31.7 96.25 0.25 0.1 1.85 0.1q-0.8-0.4-1.75-0.75-1.15 0.25-2.15 0.35 0.95 0.1 1.8 0.2z" fill="url(#linearGradient19771)"/>
+  </g>
+ </g>
+</svg>
