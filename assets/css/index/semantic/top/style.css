@@ -1,0 +1,15 @@
+#top section,
+#top aside {
+	width: 50%;
+	height: inherit
+}
+
+#top section {
+	mix-blend-mode: screen;
+}
+
+#top aside h1 img {
+	width: 67.5%;
+	display: none;
+	margin: 10px 0 20px 0
+}

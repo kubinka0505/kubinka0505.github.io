@@ -1,0 +1,33 @@
+td br {
+	margin-bottom: 16px
+}
+
+td:last-child a {
+	height: auto;
+	color: var(--link-color-2);
+	text-decoration: none
+}
+
+tr:nth-child(n+2) {
+	background: #141414
+}
+
+table, tr, td, th {
+	width: 100%;
+	padding: 32px;
+	table-layout: fixed;
+	border-collapse: collapse;
+	overflow: hidden
+}
+
+table {
+	width: 75%;
+	background: var(--background-color-1);
+	text-align: center;
+	border-radius: 24px
+}
+
+table img {
+	width: 32px;
+	height: auto
+}

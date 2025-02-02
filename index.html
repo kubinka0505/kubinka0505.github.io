@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<base target="_blank">
+	
+		<!-- Setup -->
+		<title>kubinka0505 | Home Page 🏡</title>
+		<link rel="icon" type="image/svg" href="assets/media/img/svg/logo/Icon/Red.svg">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Meta -->
+		<meta name="theme-color" content="#DB0000">
+		<meta property="og:site_name" content="kubinka0505.github.io">
+		<meta property="og:title" content="kubinka0505">
+		<meta property="og:description" content="Home Page 🏡">
+		<meta property="og:url" content="https://kubinka0505.github.io">
+		<meta property="og:image" content="https://kubinka0505.github.io/assets/media/img/png/Banners/Banner.png">
+		<meta property="og:type" content="article">
+		<meta name="twitter:card" content="summary_large_image">
+
+		<meta name="author" content="kubinka0505">
+		<meta name="description" content="Home Page. 🏡">
+		<meta name="keywords" content="kubinka0505">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/css/global.css">
+
+		<link rel="stylesheet" href="assets/css/index/flex.css">
+		<link rel="stylesheet" href="assets/css/index/style.css">
+		<link rel="stylesheet" href="assets/css/index/viewport.css">
+		<link rel="stylesheet" href="assets/css/index/animation.css">
+
+		<link rel="stylesheet" href="assets/css/index/semantic/style.css">
+
+		<link rel="stylesheet" href="assets/css/index/semantic/top/style.css">
+		<link rel="stylesheet" href="assets/css/index/semantic/top/background.css">
+		<link rel="stylesheet" href="assets/css/index/semantic/top/sections/section.css">
+		<link rel="stylesheet" href="assets/css/index/semantic/top/sections/aside/style.css">
+		<link rel="stylesheet" href="assets/css/index/semantic/top/sections/aside/menu/style.css">
+		<link rel="stylesheet" href="assets/css/index/semantic/top/sections/aside/menu/label.css">
+		<link rel="stylesheet" href="assets/css/index/semantic/top/sections/aside/menu/tempo.css">
+
+		<link rel="stylesheet" href="assets/css/index/semantic/bottom/style.css">
+		<link rel="stylesheet" href="assets/css/index/semantic/bottom/footer.css">
+		<link rel="stylesheet" href="assets/css/index/semantic/bottom/header.css">
+
+		<link rel="stylesheet" href="assets/css/index/semantic/bottom/main/style.css">
+		<link rel="stylesheet" href="assets/css/index/semantic/bottom/main/table.css">
+		<link rel="stylesheet" href="assets/css/index/semantic/bottom/main/sections/info.css">
+		<link rel="stylesheet" href="assets/css/index/semantic/bottom/main/sections/projects.css">
+		<link rel="stylesheet" href="assets/css/index/semantic/bottom/main/sections/contact.css">
+
+		<!-- JS -->
+		<script src="assets/js/main.js"></script>
+		<script>SetThemeColor()</script>
+	</head>
+	<body>
+		<div id="top">
+			<div class="background"></div>
+			<div class="waveform-a"></div>
+			<section class="lol">
+				<figure onclick="
+					Counter += 1;
+					GEBC('LogoImage')[0].src = 'assets/media/img/svg/logo/Icon/Default.svg';
+					if (Counter == 8) {
+						Play('Mwoop', 1, 'Default');
+						GEBC('lol')[0].style.display = 'none';
+						GEBC('AsideText')[0].style.display = 'none';
+						GEBC('AsideLogo')[0].style.display = 'initial';
+						alert(`I'm out!! 🚪`)
+					};
+					GEBC('LogoImage')[0].style.filter = `blur(${2*Counter}px)`
+					" oncontextmenu="
+					GEBC('LogoImage')[0].src = 'assets/media/img/svg/logo/Icon/Red.svg'">
+					<img src="assets/media/img/svg/logo/Icon/Default.svg" class="LogoImage">
+				</figure>
+			</section>
+			<aside>
+				<article>
+					<h1>
+						<img src="assets/media/img/svg/logo/Text/Bright.svg" class="AsideLogo"`>
+						<a class="AsideText"
+						onmouseover="
+							let Array = ['Musician ' + Random.choice(['🎵', '🎶', '🎹']), 'Programmer 👨‍💻'];
+							this.innerHTML = Random.choice(Array).toLowerCase();
+							document.title = 'kubinka0505 | ' + this.innerHTML.capitalize()"
+						onmouseout="
+							document.title = 'kubinka0505 | 🏡 Home Page';
+							this.innerHTML = 'kubinka0505'"
+						>kubinka0505
+						</a>
+					</h1>
+					<em><p>Scroll down for more&ensp;<a href="#bottom" title="Go to bottom" target="_top"><mark class="mark"><emoji>⬇️</emoji></mark></a></p></em>
+					<menu>
+						<nav>
+							<div>
+								<input onchange="this.background = 'maroon'" type="checkbox" id="card" oninput="
+									var cb = GEID('card');
+									if (cb.checked == true) {
+										DOCSTL.setProperty('--panels-position', 'fixed')
+										DOCSTL.setProperty('--panels-position-width_fix', 'calc(100% - 1em)')
+									} else {
+										DOCSTL.setProperty('--panels-position', 'absolute')
+										DOCSTL.setProperty('--panels-position-width_fix', '100%')
+									}
+									">
+								<label for="card"><emoji>🃏</emoji></label>
+								</input>
+							</div>
+							<div>
+								<input type="checkbox" id="scroll" oninput="
+									var sc = GEID('scroll');
+									if (sc.checked == true) {
+										DOCSTL.setProperty('--scroll-behavior', 'y mandatory')
+									} else {
+										DOCSTL.setProperty('--scroll-behavior', 'auto')
+									}
+									">
+								<label for="scroll"><emoji>🖱️</emoji></label>
+							</div>
+							<div class="tempometer">
+								<span>♩ = <span class="BPM">135</span></span>
+							</div>
+							<div>
+								<input type="range" min="90" max="150" value="135" id="input" title="Change tempo"
+									oninput="
+									DOCSTL.setProperty('--BPM', this.value);
+									GEBC('BPM')[0].innerHTML = this.value
+									">
+							</div>
+						</nav>
+					</menu>
+				</article>
+			</aside>
+		</div>
+
+		<div id="bottom">
+		<header></header>
+		<div class="waveform-b" onclick="Play('Synth', 10, 'Smirk')"></div>
+
+		<main>
+			<section>
+				<article>
+					<div id="info">
+						<content>
+							<h1><a href="#info" title="Permalink to this tab" target="_top">Hi!</a> <emoji title="👏" style="cursor: grab" onclick="Play('Clap', 2, 'Smile')">👋</emoji></h1>
+							<br>
+							<p>I'm a <code style="background: #000; color: lime">programmer</code> and a <mark style="font-family: inherit">musician</mark> <mark title="🎹" style="font-size: 16px !important" onclick="Play('Piano', 12, 'Grimace')"><emoji>🎧</emoji></mark> (not an artist)</p>
+							<br><br>
+							<p>I like the language of snakes <emoji title="😛" onclick="Play('Hiss', 2, 'Tongue')">🐍</emoji> and scalable vector graphics.</p>
+							<em class="notice">And I <b>really</b> hate making responsive websites. <emoji>🌐</emoji></em>
+						</content>
+						<content>
+							<div class="figure">
+								<img src="assets/media/img/png/Avatars/Default.png" class="avatar">
+							</div>
+						</content>
+					</div>
+
+					<div id="projects">
+						<h3><a href="#projects" title="Permalink to this tab" target="_top">Projects <emoji>🏗️</emoji></a></h3>
+						<p>Most important among others.</p>
+						<br>
+						<div class="table">
+							<div class="td">
+								<div class="th"><picture><a href="https://github.com/kubinka0505/YTMVG"><img src="https://raw.githubusercontent.com/kubinka0505/YTMVG/master/Documents/Pictures/YTMVG.svg"></a></div>
+								<div class="tr"><a href="https://github.com/kubinka0505/YTMVG">YTMVG</a></picture></div>
+							</div>
+							<div class="td">
+								<div class="th"><picture><a href="https://github.com/kubinka0505/filedate"><img src="https://raw.githubusercontent.com/kubinka0505/filedate/master/Documents/Pictures/filedate.svg"></a></div>
+								<div class="tr"><a href="https://github.com/kubinka0505/filedate">filedate</a></picture></div>
+							</div>
+							<div class="td">
+								<div class="th"><picture><a href="https://github.com/kubinka0505/colab-notebooks"><img src="https://raw.githubusercontent.com/kubinka0505/colab-notebooks/master/Documents/Pictures/Google_Colab.svg"></a></div>
+								<div class="tr"><a href="https://github.com/kubinka0505/colab-notebooks">colab-notebooks</a></picture></div>
+							</div>
+							<div class="td">
+								<div class="th"><picture><a href="https://github.com/kubinka0505/CORSE"><img src="https://raw.githubusercontent.com/kubinka0505/CORSE/master/Documents/Pictures/Registry.svg"></a></picture></div>
+								<div class="tr"><a href="https://github.com/kubinka0505/CORSE">CORSE</a></div>
+							</div>
+						</div>
+					</div>
+
+					<div id="other">
+						<h3><a href="#other" title="Permalink to this tab" target="_top">Other Stuff <emoji>📝</emoji></a></h3>
+						<br>
+						<div class="table">
+							<div class="td">
+								<div class="th"><picture><a href="music/resources/acapella" title="My public acapella archive" target="_top"><img src="assets/media/img/svg/icons/misc/music/resources/acapella.svg"></a></picture></div>
+								<div class="tr"><a href="music/resources/acapella" title="My public acapella archive">Acapellas️ <emoji>🎙️</emoji></a></div>
+							</div>
+							<div class="td">
+								<div class="th"><picture><a href="games/saves" title="Play with my time" target="_top"><img src="assets/media/img/svg/icons/misc/games/saves.svg"></a></picture></div>
+								<div class="tr"><a href="games/saves" title="Play with my time">Savegames <emoji>💾</emoji></a></div>
+							</div>
+							<div class="td">
+								<div class="th"><picture><a href="music/resources" title="Collection of my free music resources, assets and more" target="_top"><img src="assets/media/img/svg/icons/misc/music/resources.svg"></a></picture></div>
+								<div class="tr"><a href="music/resources" title="Collection of my free music resources, assets and more">Music Resources <emoji>🎚️</emoji></a></div>
+							</div>
+						</div>
+					</div>
+					<div id="social">
+						<h3><a href="#social" title="Permalink to this tab" target="_top">Social Media <emoji>👥</emoji></a></h3>
+						<br>
+						<div class="table">
+							<div class="td">
+								<div class="th"><picture><a href="https://github.com/kubinka0505" title="GitHub Profile"><img src="assets/media/img/svg/icons/social/GitHub.svg"></a></picture></div>
+								<div class="tr"><a href="https://github.com/kubinka0505" title="GitHub Profile">GitHub<emoji>👨‍💻</emoji></a></div>
+							</div>
+							<div class="td">
+								<div class="th"><picture><a href="https://reddit.com/user/kubinka0505" title="Reddit Profile"><img src="assets/media/img/svg/icons/social/Reddit.svg"></a></picture></div>
+								<div class="tr"><a href="https://reddit.com/user/kubinka0505" title="Reddit Profile">Reddit<emoji>👥</emoji></a></div>
+							</div>
+							<div class="td">
+								<div class="th"><picture><a href="https://youtube.com/kubinka0505" title="YouTube Channel"><img src="assets/media/img/svg/icons/social/YouTube.svg"></a></picture></div>
+								<div class="tr"><a href="https://youtube.com/kubinka0505" title="YouTube Channel">YouTube<emoji>📹</emoji></a></div>
+							</div>
+							<div class="td">
+								<div class="th"><picture><a href="https://twitter.com/kubinka0505" title="Twitter Account"><img src="assets/media/img/svg/icons/social/Twitter.svg"></a></picture></div>
+								<div class="tr"><a href="https://twitter.com/kubinka0505" title="Twitter Account">Twitter<emoji>🦜</emoji></a></div>
+							</div>
+							<div class="td">
+								<div class="th"><picture><a href="https://www.weights.gg/pl/user/closvecbu001xl208z6f2o1p7" title="weights.gg Account"><img src="assets/media/img/svg/icons/social/WeightsGG.svg"></a></picture></div>
+								<div class="tr"><a href="https://www.weights.gg/pl/user/closvecbu001xl208z6f2o1p7" title="weights.gg Account">weights.gg<emoji>🤖🎙️</emoji></a></div>
+							</div>
+						</div>
+					</div>
+
+					<div id="contact">
+						<h3><a href="#contact" title="Permalink to this tab" target="_top">Contact <emoji>☎️</emoji></a></h3>
+						<br>
+						<div class="table">
+							<div class="td">
+								<div class="th"><a href="mailto:kubinka0505@yandex.com" title="Write a mail"><img src="assets/media/img/svg/icons/E-Mail.svg"></a></div>
+								<div class="tr">
+									<!--p>E-Mail <emoji>📧</emoji></p>
+									<br style="margin: 0em"-->
+									<code><a href="mailto:kubinka0505@yandex.com" title="Write a mail">kubinka0505@yandex.com</a></code>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<p style="pointer-events: none">by kubinka0505&emsp;|&emsp;<script>document.write(new Date().getFullYear())</script></p>
+			<p style="padding-left: .75em"><a href="#top" title="Go to top" target="_top"><mark class="mark"><emoji>⬆️</emoji></mark></a></p>
+		</footer>
+	</body>
+</html>

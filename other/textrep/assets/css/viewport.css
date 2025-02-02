@@ -1,0 +1,11 @@
+@media only screen and (max-width: 800px) {
+	main {
+		height: 100%
+	}
+
+	.container {
+		width: 62.5% !important;
+		scrollbar-width: initial;
+		font-size: 87.5%;
+	}
+}

@@ -1,0 +1,56 @@
+:root {
+	--polygon-height: 50%
+}
+
+aside article {
+	width: calc(100% - calc(calc(20px * 2)));
+	max-width: 400px;
+	padding: 20px;
+	background: var(--background-color-3);
+	position: var(--panels-position);
+	border-radius: 8px;
+	flex-flow: column
+}
+
+aside article h1,
+aside article em,
+aside article menu {
+	width: 100%;
+}
+
+aside article h1 a {
+	width: 100%;
+	height: 75px;
+	color: #FFF;
+	padding: 0 0 8px;
+	font-weight: normal;
+	font-size: 40px;
+	font-family: Circular;
+	text-transform: uppercase;
+	animation: text_shadow calc(var(--animation-time) * 25) linear infinite;
+	transition: var(--animation-time) ease-in-out;
+}
+
+aside article em p {
+	padding: 0 0 25px
+}
+
+aside article em {
+	height: 48px;
+	font-size: 18px;
+	text-transform: lowercase
+}
+
+aside article h1 img {
+  width: 75%;
+  padding: 8px 0;
+}
+
+aside article h1 {
+	font-size: 48px;
+	font-weight: 200;
+	margin: 0
+}
+
+aside mark {animation-direction: reverse}
+aside article p {padding-bottom: 8px}

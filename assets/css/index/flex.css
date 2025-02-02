@@ -1,0 +1,24 @@
+#top,
+.waveform,
+#top section,
+#top section figure,
+#top aside,
+aside article,
+aside article h1,
+aside article em,
+aside article h1 a,
+#top menu,
+#top menu *,
+.tempo, .tempometer,
+main,
+#bottom,
+.td a,
+#bottom section,
+#bottom section article div,
+#info content,
+#info .figure,
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center
+}

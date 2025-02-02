@@ -1,0 +1,65 @@
+@media only screen and (max-width: 800px) {
+	#top {
+		flex-flow: column-reverse;
+		align-items: center
+	}
+
+	#top section figure {
+		width: 67.5% !important
+	}
+	#top aside {
+		width: 70% !important
+	}
+	#top aside article {
+		padding: 0;
+		background: none;
+		max-width: 87.5vw;
+	}
+	#top aside article h1 a {
+		font-size: 40px
+	}
+
+	#bottom main section article {
+		scrollbar-width: thin !important;
+		scroll-snap-type: none !important
+	}
+	#bottom main section {
+		width: 87.5% !important;
+		height: 92.5% !important;
+	}
+	#bottom h1 *,
+	#bottom h2 *,
+	#bottom h3 * {
+		font-size: 2.5vh
+	}
+
+	.waveform-a {height: 12.5% !important}
+	.waveform-b {filter: blur(2px) !important}
+
+	#info content {
+		width: 75% !important;
+		position: absolute
+	}
+	#info content > .figure {display: none !important}
+	#info h1 * {font-size: 4vh}
+	#info .notice {display: block !important}
+
+	#other .th {
+		padding: 0 !important;
+		width: 75%
+	}
+
+	#contact code {font-size: 14px}
+	#contact .td {flex-flow: column !important}
+
+	.table {
+		width: 75% !important;
+		flex-flow: column;
+		background: none !important
+	}
+
+	.td {flex-direction: row !important}
+	.tr p {padding: 0 0 8px}
+
+	footer {font-size: 16px !important}
+}

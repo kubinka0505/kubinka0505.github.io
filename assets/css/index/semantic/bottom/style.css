@@ -1,0 +1,23 @@
+#bottom {
+	height: 100vh;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	animation: background_color 25s linear infinite alternate
+}
+
+.waveform-b {
+	width: 100%;
+	height: 12.5%;
+	filter: blur(1px);
+	background-image: url(../../../../../assets/media/img/gif/Waveform.gif);
+	background-size: 10% 100%;
+	background-repeat: repeat-x;
+	animation: play_a calc(var(--animation-time) * 60) linear infinite reverse;
+	position: absolute;
+	opacity: 50%;
+	z-index: 1;
+}
+
+
+header, footer {height: var(--navigation-height)}

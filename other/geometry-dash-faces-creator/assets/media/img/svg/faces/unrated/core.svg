@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="31.856mm" height="31.829mm" version="1.1" viewBox="0 0 31.856 31.829" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient3261" x1="57.1" x2="57.1" y1=".35" y2="113.85" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#0cf" offset="0"/>
+   <stop stop-color="#03b" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient3269" x1="57.1" x2="57.1" y1=".35" y2="113.85" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#0df" offset="0"/>
+   <stop stop-color="#03b" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient3275" x1="57.1" x2="57.1" y1=".35" y2="113.85" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#ddd" offset="0"/>
+   <stop stop-color="#aaa" offset=".51373"/>
+   <stop stop-color="#666" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g transform="translate(-69.99 -188.45)">
+  <g transform="matrix(.26458 0 0 .26458 70.784 189.24)">
+   <path d="m97.2 97.2q16.65-16.6 16.65-40.1t-16.65-40.15q-14-14-32.95-16.2-3.5-0.4-7.15-0.4t-7.1 0.4q-19 2.2-33.05 16.2-16.6 16.65-16.6 40.15t16.6 40.1q16.65 16.65 40.15 16.65t40.1-16.65z" fill="url(#linearGradient3275)"/>
+   <g>
+    <path d="m0.55 57.1q-0.1-1.15-0.15-2.3-0.05 1.15-0.05 2.3h0.2m113.3 0q0-1.15-0.05-2.3-0.05 1.15-0.1 2.3z" fill="url(#linearGradient3261)"/>
+    <path d="m97.2 97.2q16.65-16.6 16.65-40.1h-0.15q-1.5 20.55-17.3 36.6t-39.3 16.05-39.3-16.05-17.25-36.6h-0.2q0 23.5 16.6 40.1 16.65 16.65 40.15 16.65t40.1-16.65z" fill="#444"/>
+   </g>
+   <g>
+    <path d="m0.35 57.1q0 1.15 0.05 2.25 0.05-1.15 0.15-2.25h-0.2m113.35 0q0.05 1.1 0.1 2.25 0.05-1.1 0.05-2.25z" fill="url(#linearGradient3269)"/>
+    <path d="m113.7 57.1h0.15q0-23.5-16.65-40.15-14-14-32.95-16.2-3.5-0.4-7.15-0.4t-7.1 0.4q-19 2.2-33.05 16.2-16.6 16.65-16.6 40.15h0.2q1.4-20.6 17.15-36.3 15.7-15.7 39.2-15.75t39.45 15.7q15.9 15.75 17.35 36.35z" fill="#eee"/>
+   </g>
+   <path d="m114.4 57.15q0 23.7-16.85 40.4-16.7 16.75-40.4 16.75-23.65 0-40.45-16.75-16.7-16.7-16.7-40.4 0-23.65 16.7-40.45 13.25-13.15 30.75-15.95 4.7-0.75 9.7-0.75t9.75 0.75q17.5 2.8 30.65 15.95 16.85 16.8 16.85 40.45z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  </g>
+ </g>
+</svg>

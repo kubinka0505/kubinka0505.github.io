@@ -1,0 +1,37 @@
+:root {
+	--table-height: 100%
+}
+
+.th {height: calc(var(--table-height))}
+.tr {min-height: calc(var(--table-height) / 8)}
+.td, .tr {flex-direction: column}
+.table * {transition: calc(var(--animation-time) / 5) linear}
+.table .emoji {align-content: center}
+.table br {margin: 19px 0}
+.table a:hover {transform: scale(calc(1 + 1 / 8))}
+.td, .th, .th img, .tr {width: 100%}
+.td, th, .tr .th *, .th img {height: var(--table-height)}
+
+.td a img {
+	height: inherit;
+	align-self: center
+}
+
+#bottom article div br {
+	display: block;
+	margin: 30px
+}
+
+.table {
+	width: 87.5%;
+	height: calc(var(--table-height) / 2);
+	/*background: #101010;
+	padding: 8px;
+	border: 4px solid var(--background-color-6);
+	border-radius: 16px*/
+}
+
+.th a {
+	max-width: 75%;
+	height: 75%;
+}

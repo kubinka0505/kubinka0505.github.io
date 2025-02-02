@@ -1,0 +1,35 @@
+body > header,
+body > header nav,
+body > footer {
+	width: 100%;
+}
+
+body > footer {
+	background: #000
+}
+
+body > header {
+	backdrop-filter: blur(4px);
+	background: rgba(0, 0, 0, 0.75);
+}
+
+body > header,
+body > footer {
+	height: var(--navigation-height)
+}
+
+body > header nav {
+	width: 75%;
+	height: 75%
+}
+
+body > header nav,
+body > footer {
+	overflow: hidden;
+	z-index: 1
+}
+
+header nav section p,
+footer * {color: var(--link-color)}
+
+footer {bottom: 0}

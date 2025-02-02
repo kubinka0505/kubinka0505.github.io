@@ -1,0 +1,15 @@
+#top section figure {
+	width: 75%;
+	max-width: 250px;
+	position: var(--panels-position)
+}
+
+#top section figure:hover {
+	opacity: .75;
+	cursor: grab
+}
+
+#top section figure:active {
+	opacity: .5;
+	cursor: grabbing
+}

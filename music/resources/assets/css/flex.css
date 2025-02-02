@@ -1,0 +1,18 @@
+header nav,
+header nav section,
+body > header,
+body > footer,
+.main a,
+.main > div,
+.main > div > article,
+.main > div > article h1,
+td:last-child a,
+.container section,
+.container section aside,
+.container section article footer p,
+.container section article footer nav,
+.container section article footer nav a {
+	display: flex;
+	align-items: center;
+	justify-content: center
+}

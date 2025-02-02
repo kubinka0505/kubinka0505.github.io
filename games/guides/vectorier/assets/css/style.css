@@ -1,0 +1,222 @@
+:root {
+	--pos: 22.5%;
+	--color-warn: #FC0;
+}
+
+html *::selection {
+	background-color: rgba(219, 0, 0, 1);
+}
+
+code {
+	font-size: 1em;
+}
+
+b code,
+strong code,
+th code {
+	font-weight: initial !important;
+}
+
+/*
+body {
+	font-family: Lato;
+	overflow-x: initial
+}
+*/
+
+html {
+	background: #111;
+	scrollbar-color: #AAA #222;
+}
+
+/* Logo Styles */
+.__logo {
+	background: revert !important;
+	filter: invert(1) !important;
+}
+
+/* Blockquote */
+blockquote {
+	color: #EEE;
+}
+
+.info {
+	border-color: var(--link-color-2);
+}
+
+.warn {
+	border-color: var(--color-warn);
+}
+
+.error {
+	border-color: var(--color-red);
+}
+
+/* Stackedit Styles */
+.stackedit__html {
+	margin: 0;
+	padding: 3em 8em;
+	max-width: initial;
+}
+
+.stackedit__left {
+	width: var(--pos);
+	background: #000;
+	scrollbar-color: #AAA #222;
+	scrollbar-width: thin;
+}
+
+.stackedit__right {
+	left: var(--pos);
+	color: #DDD;
+	background: #111;
+}
+
+.stackedit__toc {
+	font-family: Circular;
+}
+
+.stackedit__toc ul {
+	color: #EEE;
+}
+
+.stackedit__right img {
+	filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+.stackedit__right .fig {
+	width: 60%;
+	border-radius: 5px;
+	filter: revert;
+	padding: 1em;
+	margin-top: 3em;
+	background: linear-gradient(#7FB8DB, #BADBE5);
+}
+
+.stackedit__right .fig:hover {
+	background: white !important;
+}
+
+.stackedit__right td > img {
+	filter: invert(1) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+/* Table Styles */
+table {
+	border: 1px solid white;
+	border-radius: 5px;
+	border-collapse: inherit;
+}
+
+/* Header Anchor Links */
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+	color: inherit !important;
+	text-decoration: none;
+	transition: color calc(var(--animation-time) / 4);
+}
+
+.stackedit__right .stackedit__html h1,
+.stackedit__right .stackedit__html h2,
+.stackedit__right .stackedit__html h3,
+.stackedit__right .stackedit__html h4,
+.stackedit__right .stackedit__html h5,
+.stackedit__right .stackedit__html h6 {
+	padding-top: 1em;
+}
+
+/*
+h1 > a:hover,
+h2 > a:hover,
+h3 > a:hover,
+h4 > a:hover,
+h5 > a:hover,
+h6 > a:hover {
+	filter: drop-shadow(0 0 1px var(--color-red))
+}
+*/
+
+a:hover {
+	color: var(--link-color-2) !important;
+}
+
+/* Preformatted Code Blocks */
+pre {
+	background: #000;
+	border: 2px groove #333;
+	border-radius: 5px;
+	padding: 1em 0;
+	filter: brightness(1.25) saturate(1.25);
+}
+
+pre code {
+	scrollbar-color: #555 rgba(219, 0, 0, 1);
+	scrollbar-width: thin;
+}
+
+/* Media Queries */
+@media (max-width: 1060px) {
+	.stackedit__left {
+		padding: 3em 10%
+	}
+
+	.stackedit__html {
+		padding: 3em 10%
+	}
+
+	.stackedit__right {
+		left: 0;
+		scrollbar-width: initial !important;
+	}
+
+	.stackedit__right .fig {
+		width: 80%;
+	}
+
+	pre code {
+		scrollbar-width: initial !important;
+	}
+}
+
+/* Table of Contents Caption */
+.toc_caption {
+	padding: 0 1em;
+	font-size: 1.1em;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+/* Horizontal Rules */
+.stackedit__left hr {
+	margin: 1em;
+	border: 1px solid rgba(219, 0, 0, 1);
+}
+
+/* Optional: TOC to Right (Commented Out) */
+/*
+.stackedit {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+@media (min-width: 1060px) {
+	.stackedit__right {
+		left: 0px;
+		right: 250px;
+	}
+}
+
+@media (min-width: 1060px) {
+	.stackedit__left {
+		left: revert;
+	}
+}
+
+.stackedit__left {
+	left: revert;
+}
+*/

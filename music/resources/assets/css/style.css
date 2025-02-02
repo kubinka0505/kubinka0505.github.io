@@ -1,0 +1,55 @@
+:root {
+	--height: 75vh;
+	--padding: 10vh;
+	--scale: 2
+}
+
+* {
+	color: var(--text-color);
+	text-align: center;
+	margin: 0
+}
+
+body, html {height: 100%}
+
+body {
+	width: 100%;
+	background: var(--background-color-3);
+	flex-flow: column
+}
+
+mark {
+	font-size: 8.75vh;
+	background: none
+}
+
+.a {color: var(--link-color) !important}
+.main a, abbr {text-decoration: none}
+
+a:hover {text-decoration: underline}
+
+a > img {
+	/*! width: auto; */
+	height: 20px;
+	scale: 1;
+	transition: 0.125s ease-in-out
+}
+
+.main a:hover > img {transform: scale(1.25)}
+.main > div {
+	min-height: 100vh
+}
+
+strong, a u {color: red}
+
+h1 {font-size: 2vh}
+h1, th {font-weight: 400}
+
+br {
+	display: block;
+	margin: 32px
+}
+
+p {
+	display: initial
+}

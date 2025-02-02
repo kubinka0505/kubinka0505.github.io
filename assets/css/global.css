@@ -1,0 +1,75 @@
+@import "fonts.css";
+
+:root {
+	--BPM: 135;
+	--text-color: #FFF;
+	--link-color: #D3D3D3;
+	--link-color-2: #00B0F4;
+	--border-color: var(--background-color-5);
+	--background-color-1: #101010;
+	--background-color-2: #161616;
+	--background-color-3: #282828;
+	--background-color-4: #323232;
+	--background-color-5: #484848;
+	--background-color-6: #525252;
+	--background-error: #200000;
+	--color-red: rgba(219, 0, 0, 1);
+	--color-green: rgba(0, 150, 0, 1);
+	--border-radius: 10px;
+	--scroll-behavior: auto;
+	--panels-position: absolute;
+	--panels-position-width_fix: 100%;
+	--important-opacity: 0.5;
+	--navigation-height: 18.75%;
+	--animation-time: 0.5s
+}
+
+* {
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: Outfit;
+	scroll-behavior: smooth;
+	overflow-x: hidden
+}
+
+img[src*=".png"],
+img[src*=".gif"],
+img[src*=".svg"] {
+	pointer-events: none
+}
+
+/* -=-=-=- */
+
+code {
+	font-family: PxPlus IBM VGA8;
+}
+
+span > code:not(:first-child) {
+	padding: 0 0 0 1px
+}
+
+emoji {
+	font-family: Twemoji;
+	font-weight: 400 !important;
+	padding: 0 5px
+}
+
+/* External */
+
+.katex {
+	font-size: inherit !important
+}
+
+.katex-display {
+	margin: inherit !important
+}
+
+.swal-popup-custom {
+	background: red !important
+}

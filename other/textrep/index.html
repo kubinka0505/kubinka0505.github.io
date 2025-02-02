@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<base target="_blank">
+
+		<!-- Setup -->
+		<title>kubinka0505 | Text Transformer 🔧</title>
+		<link rel="icon" href="../../assets/media/img/svg/icons/Wrench_02.svg" type="image/svg+xml">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Meta -->
+		<meta name="theme-color" content="#DB0000">
+		<meta property="og:site_name" content="kubinka0505.github.io">
+		<meta property="og:url" content="https://kubinka0505.github.io">
+		<meta property="og:type" content="article">
+		<meta name="twitter:card" content="summary_large_image">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="../../assets/css/global.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/viewport.css">
+
+		<!-- JS -->
+		<script src="../../assets/js/SweetAlert2.min.js"></script>
+		<script src="../../assets/js/main.js"></script>
+		<script src="assets/js/dicts.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", populateDropdown);
+		</script>
+	</head>
+
+	<body>
+		<main>
+			<div class="container">
+				<h2>Text Transformer <emoji style="font-weight: initial">🔁</emoji></h2>
+				<textarea class="inputText" rows="5" placeholder="Enter text..."></textarea>
+				<select class="dictionary"></select>
+				<button onclick="transformText()" class="process-btn">Transform</button>
+				<textarea class="outputText" rows="5" placeholder="Output text..." readonly></textarea>
+				<button onclick="copyToClipboard(1500)" class="copy-btn">Copy</button>
+			</div>
+		</main>
+	</body>
+</html>

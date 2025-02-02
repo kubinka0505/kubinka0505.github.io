@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<base target="_blank">
+
+		<!-- Setup -->
+		<title>kubinka0505 | Timestretch Calculator ⏱️</title>
+		<link rel="icon" href="../../../../assets/media/img/svg/icons/Wrench_01.svg" type="image/svg+xml">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Meta -->
+		<meta name="theme-color" content="#808080">
+		<meta property="og:site_name" content="kubinka0505.github.io">
+		<meta property="og:title" content="Music Calculators 🧮">
+		<meta property="og:description" content="Collection of my music calculators.">
+		<meta property="og:url" content="https://kubinka0505.github.io/music/resources">
+		<meta property="og:image" content="https://kubinka0505.github.io/assets/media/img/png/Banners\tools/calculators/Banner.png">
+		<meta property="og:type" content="article">
+		<meta name="twitter:card" content="summary_large_image">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="../../../../assets/css/global.css">
+		<link rel="stylesheet" href="../../../resources/assets/css/flex.css">
+		<link rel="stylesheet" href="../../../resources/assets/css/style.css">
+		<link rel="stylesheet" href="../../../resources/assets/css/main/semantic/sides/header.css">
+		<link rel="stylesheet" href="../../../resources/assets/css/main/semantic/sides/style.css">
+		<link rel="stylesheet" href="../../../resources/assets/css/viewport.css">
+		<link rel="stylesheet" href="../assets/css/style.css">
+		<link rel="stylesheet" href="../assets/css/viewport.css">
+
+		<!-- JS -->
+		<script src="../../../../assets/js/SweetAlert2.min.js"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+	</head>
+
+	<body>
+		<header id="top">
+			<nav>
+				<section>
+					<figure>
+						<a href="../../../../" target="_top"><img src="../../../../assets/media/img/svg/logo/Full/Bright.svg" alt="Default"></a>
+						</figure>
+					<p>Music Tools</p>
+				</section>
+			</nav>
+		</header>
+
+		<main>
+			<div class="container">
+				<section>
+					<h2>Timestretch Calculator <emoji style="font-weight: initial">⏱️</emoji></h2>
+					<aside>
+						<span>Migrated from <a href="https://colab.research.google.com/github/kubinka0505/colab-notebooks/blob/master/Notebooks/General/Math/Music/Calculators.ipynb">my colab notebook</a>.</span>
+					</aside>
+				</section>
+				<div class="inputs">
+					<div>
+						<span>
+							<code>Input</code>
+						</span>
+						<input class="input" oninput="limiter(this)" type="text" placeholder="BPM or sample rate">
+					</div>
+
+					<div>
+						<span>
+							<code>Target</code>
+						</span>
+						<input class="target" oninput="limiter(this)" type="text" placeholder="BPM or sample rate">
+					</div>
+				</div>
+				<div class="config">
+					<div class="btn">
+						<button onclick="calc_tsp()">Calculate</button>
+					</div>
+					<div class="cbxs">
+						<span>
+							<label onclick="showAlert('Information', 'Subtracts 200 from the final result', 'info')" title="Subtracts 200 from the final result" for="cfg.altVal">Alternative scale</label>
+							<input onclick="cbChange()" type="checkbox" class="cfg.altVal" name="cfg.altVal">
+						</span>
+						<span>
+							<label onclick="showAlert('Information', 'Outputs semitones instead of percentage', 'info')" title='Outputs semitones instead of percentage' for="cfg.modeSt">Output semitones</label>
+							<input onclick="cbChange()" type="checkbox" class="cfg.modeSt" name="cfg.altVal">
+						</span>
+						<br>
+						<span>
+							<label onclick="showAlert('Warning', 'Math output! <emoji>😨</emoji>', 'warning')" title="Math output!" for="cfg.outMath">Output equations</label>
+							<input onclick="cbChange()" type="checkbox" class="cfg.outMath" name="cfg.outMath">
+						</span>
+					</div>
+				</div>
+				<div class="outDiv">
+					<div>
+						<span class="output">Result will appear here</span>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+
+	<script src="../../../../assets/js/main.js"></script>
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/calc_tsp.js"></script>
+</html>

@@ -1,0 +1,17 @@
+.mark {
+	filter: grayscale(1) sepia(1) contrast(12.5) hue-rotate(300deg) saturate(25);
+	/*dark arrow*/ /*filter: invert(1) hue-rotate(330deg) saturate(12.5) brightness(.875)*/
+}
+
+mark {
+	color: #FFF;
+	background: none;
+	font-style: normal;
+	animation: bounce calc(60s / var(--BPM)) infinite ease-out;
+}
+
+#top, #bottom {
+	width: inherit;
+	height: inherit;
+	scroll-snap-align: start
+}
