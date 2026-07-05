@@ -1,0 +1,155 @@
+:root {
+	--height: 200px;
+	--option-margin: 25px;
+}
+
+html {
+	background: #001C2B
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.background {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-size: cover;
+	background-image: url(../media/img/jpg/bg.jpg);
+	filter: saturate(0) sepia(1) saturate(5) hue-rotate(150deg) contrast(1.5);
+	opacity: 0.25;
+}
+
+.container {
+	width: 75%;
+	min-height: 75%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+}
+
+.container .header {
+	color: var(--text-color);
+	text-align: center
+}
+
+.container .header h1 {
+	font-size: 40px;
+	margin-top: 0;
+	margin-bottom: 1em
+}
+
+.subcontainer {
+	width: 82.5%;
+	display: flex;
+	justify-content: space-between
+}
+
+.options {
+	width: 37.5%
+}
+ 
+.option:not(:last-child) {
+	margin-bottom: var(--option-margin);
+}
+
+.option label {
+	color: var(--text-color);
+	display: block;
+	margin-bottom: 10px;
+	font-size: 25px;
+	font-weight: 600
+}
+
+.option select:focus {
+	outline: 3px solid var(--color-red)
+}
+
+.option select {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 0px solid transparent;
+	outline: 3px solid var(--link-color-2);
+	background: var(--background-color-4);
+	color: var(--text-color);
+}
+
+.box {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: column
+}
+
+.box-capture-area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%
+}
+
+.display-box {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: calc(var(--height) * 1.25);
+	height: calc(var(--height) * 1.25);
+	background: white;
+	border-radius: 25px;
+	user-select: none
+}
+
+.box .display {
+	height: var(--height);
+	border-radius: 12px;
+	padding: 25px;
+	position: absolute;
+}
+
+.box .display img {
+	height: var(--height);
+}
+
+/* Button */
+
+.button-container {
+	display: flex
+}
+
+.button-main {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: var(--link-color-2);
+	border-radius: 8px;
+	animation: transform;
+	transition: background 0.1s ease-in-out, filter 0.1s ease-in-out;
+	user-select: none
+}
+
+.button-main:hover {
+	filter: brightness(0.75);
+	cursor: pointer
+}
+
+.button-main:active {
+	filter: brightness(0.5)
+}
+
+.button-container span {
+	font-weight: bold;
+	text-transform: capitalize;
+	margin: 12px 20px;
+	color: #FFF;
+	text-shadow: -1px 1px 0 #000,
+				1px 1px 0 #000,
+				1px -1px 0 #000,
+				-1px -1px 0 #000;
+	pointer-events: none
+}

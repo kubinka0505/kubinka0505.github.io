@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Text Transformer</title>
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			background-color: #f3f4f6;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			padding: 20px;
+			background: white;
+			border-radius: 8px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			width: 350px;
+		}
+		textarea, select, button {
+			box-sizing: border-box;
+			padding: 10px;
+			width: 100%;
+			margin-top: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		textarea {
+			resize: vertical;
+			max-height: 150px;
+		}
+		button {
+			background-color: #007bff;
+			color: white;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #0056b3;
+		}
+		.output {
+			user-select:none;
+			margin-top: 10px;
+			padding: 10px;
+			background: #f9f9f9;
+			outline: none;
+			border-radius: 5px;
+			min-height: 40px;
+		}
+		.copy-btn {
+			background-color: #28a745;
+		}
+		.copy-btn:hover {
+			background-color: #218838;
+		}
+	</style>
+	<script>
+		class phrases {
+			static poko = ["PO", "KO", "PIS"];
+		}
+
+		const presets = {
+			cyrlic: {
+				"A": "А", "a": "а", "B": "В", "E": "Е", "e": "е", "S": "Ѕ", "s": "ѕ",
+				"I": "І", "i": "і", "J": "Ј", "j": "ј", "M": "М", "H": "Н", "O": "О", "o": "о",
+				"P": "Р", "p": "р", "C": "С", "c": "с", "T": "Т", "y": "у", "X": "Х", "x": "х"
+			},
+			poko: {
+				"po": phrases.poko[0], "Po": phrases.poko[0], "pO": phrases.poko[0],
+				"ko": phrases.poko[1], "Ko": phrases.poko[1], "kO": phrases.poko[1],
+
+				"pis": phrases.poko[2], "Pis": phrases.poko[2], "PIs": phrases.poko[2],
+				"pIS": phrases.poko[2], "piS": phrases.poko[2], "pIs": phrases.poko[2]
+			}
+		};
+
+function transformText() {
+    let inputText = document.getElementById("inputText").value;
+    let type = document.getElementById("dictionary").value;
+
+    if (presets[type]) {
+        for (let key in presets[type]) {
+            inputText = inputText.split(key).join(presets[type][key]); // Preserve all special characters
+        }
+        document.getElementById("outputText").textContent = inputText; // Keeps newlines & tabs
+    } else {
+        alert("Invalid dictionary selection.");
+    }
+}
+
+		
+		function copyToClipboard() {
+			const outputElement = document.getElementById("outputText");
+
+			if (!outputElement) {
+				alert("No output text found!");
+				return;
+			}
+
+			const textToCopy = outputElement.textContent; // Preserve formatting
+
+			navigator.clipboard.writeText(textToCopy)
+				.then(() => alert("Copied to clipboard!"))
+				.catch(err => alert("Failed to copy: " + err));
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h2>Text Transformer</h2>
+		<textarea id="inputText" rows="5" placeholder="Enter text..."></textarea>
+		<select id="dictionary">
+			<option value="cyrlic">Cyrillic</option>
+			<option value="poko">POKO</option>
+		</select>
+		<button onclick="transformText()">Transform</button>
+		<textarea readonly id="outputText" class="output" rows="5" placeholder="Output text..."></textarea>
+		<button onclick="copyToClipboard()" class="copy-btn">Copy</button>
+	</div>
+</body>
+</html>

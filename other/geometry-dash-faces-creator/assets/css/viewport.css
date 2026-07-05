@@ -1,0 +1,45 @@
+@media only screen and (max-width: 800px) {
+	body {
+		align-items: baseline !important
+	}
+
+	.options {
+		width: 100% !important;
+	}
+
+	.container {
+		padding: 0 20px;
+		width: 100% !important;
+		flex-flow: column;
+		overflow: scroll;
+		scrollbar-width: none;
+	}
+
+	.container .header h1 {
+		font-size: 2.25em;
+		margin: 0;
+	}
+
+	.header {
+		padding-top: 2em
+	}
+
+	.subcontainer {
+		padding: 2em 0
+	}
+
+	.box {
+		padding-top: 2em
+	}
+
+	.subcontainer {
+		flex-flow: column;
+		align-items: center;
+	}
+
+	.box {
+		width: 100% !important;
+		min-height: 350px !important;
+		justify-content: space-between;
+	}
+}

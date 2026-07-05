@@ -1,0 +1,27 @@
+@import "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap";
+
+@font-face {
+	font-family: "PxPlus IBM VGA8";
+	src: url(../fonts/PxPlus_IBM_VGA8.woff2) format("woff2")
+}
+
+@font-face {
+	font-family: "Circular";
+	src: url(../fonts/Lineto_Circular.woff2) format("woff2")
+}
+
+@font-face {
+	font-family: "Lateef";
+	src: url(../fonts/Lateef.woff2) format("woff2")
+}
+
+@font-face {
+	font-family: "Doulos SIL";
+	src: url(../fonts/Doulos_SIL.woff2) format("woff2")
+}
+
+@font-face {
+	font-family: "Twemoji";
+	src: url(../fonts/Twemoji.ttf) format("truetype")
+}
